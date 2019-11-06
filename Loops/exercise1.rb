@@ -4,4 +4,4 @@ x.each { |a|
   a + 1
 }
 
-# Method returns 2, 3, 4, 5, 6
+# Each method will always return the array it was called on.
