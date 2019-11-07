@@ -1,9 +1,9 @@
-def countdown(integer)
-  puts integer
-  while integer > 0
-    integer -= 1
-    puts integer
+def countdown(number)
+  puts number
+  if number > 0
+    countdown(number - 1)
   end
 end
 
-countdown(10)
+countdown(100)
+
