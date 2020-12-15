@@ -1,0 +1,36 @@
+noStroke();
+
+// Variables & functions
+var rainX = [0];
+var rainY = 0;
+var rainDrop = function(n) {
+    fill(61, 64, 255);
+    ellipse(rainX[n], rainY, 5, 15);
+};
+
+draw = function() {
+    // Setting
+    background(181, 241, 255);
+    fill(20, 199, 34);
+    rect(0, 300, 400, 100);
+    
+    // Rain drop
+    for (var rD = 0; rD < 25; rD++) {
+        rainDrop(rD);
+    }
+   
+    rainY += 15;
+
+    if (rainY > 400) {
+        rainY = 0;
+        for (var n = 0; n < 20; n++) {
+            rainX[n] = random(0, 400);
+        }
+
+    }
+
+    // Ground
+    fill(179, 179, 179);
+    arc(199, 0, 400, 100, 0 ,180);
+
+};
