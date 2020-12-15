@@ -1,0 +1,64 @@
+background(40, 99, 8);
+var number;
+var integer;
+
+//8 ball
+fill(0, 0, 0);
+ellipse(200, 200, 350, 350);
+fill(255, 255, 255);
+ellipse(200, 200, 200, 200);
+fill(115, 0, 255);
+fill(255, 255, 255);
+ellipse(299, 106, 50, 50);
+fill(0, 0, 0);
+textSize(27);
+text("What is the meaning of life oh Magic 8 Ball?", 119, 145, 190, 150);
+
+mousePressed = function() {
+    
+    number = random(0, 3);
+    integer = round(number);
+
+    if (integer === 0 && mouseX > 100 && mouseX < 300 && mouseY > 100 && mouseY < 300     ) {
+    fill(255, 255, 255);
+    ellipse(200, 200, 200, 200);
+    fill(255, 0, 0);
+    textSize(27);
+    text("Maximise well-being", 137, 167, 190, 150);
+    }
+
+    else if (integer === 1 && mouseX > 100 && mouseX < 300 && mouseY > 100 && mouseY     < 300) {
+    fill(255, 255, 255);
+    ellipse(200, 200, 200, 200);
+    fill(17, 168, 7);
+    textSize(27);
+    text("Conquer all", 124, 167, 190, 150);
+    }
+
+    else if (integer === 2 && mouseX > 100 && mouseX < 300 && mouseY > 100 && mouseY     < 300) {
+    fill(255, 255, 255);
+    ellipse(200, 200, 200, 200);
+    fill(4, 0, 255);
+    textSize(123);
+    text("42", 124, 148, 190, 150);
+    }
+
+    else if (integer === 3 && mouseX > 100 && mouseX < 300 && mouseY > 100 && mouseY     < 300) {
+    fill(255, 255, 255);
+    ellipse(200, 200, 200, 200);
+    fill(181, 11, 181);
+    textSize(27);
+    text("PARTY", 157, 167, 190, 150);
+    }
+
+};
+
+mouseReleased = function() {
+
+    fill(255, 255, 255);
+    ellipse(200, 200, 200, 200);
+    fill(0, 0, 0);
+    textSize(27);
+    text("What is the meaning of life oh Magic 8 Ball?", 119, 145, 190, 150);
+    
+};
