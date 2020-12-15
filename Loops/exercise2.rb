@@ -1,7 +1,7 @@
 i = 0
 
 while i < 10
-  puts "Do you hate your father?"
+  puts "Do you love icecream?"
   answer = gets.chomp
   if answer == "Yes"
     puts "Ok."
